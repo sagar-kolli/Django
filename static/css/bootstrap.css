@@ -1,0 +1,46 @@
+ * {
+       margin: 0;
+       padding: 0;
+   }
+
+ div#banner {
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: #18045A;
+           color:white;
+       width: 100%;
+     }
+ div#banner-content {
+       width: 800px;
+       margin: 0 auto;
+       padding: 10px;
+       border: none;
+     }
+ div#main-content {
+       padding-top: 150px;
+           background-color: #18045A;
+    }
+#popUpYes
+{
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#popUpYes:hover
+{
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  padding: 16px 32px;
+  text-align: center;
+}
