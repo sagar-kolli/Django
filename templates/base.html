@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    {% block title %} <title>Title</title> {% endblock title %}
-</head>
-<body>
-{% block content %}
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			{% block title %}
+			{% endblock title %}
+			<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<![endif]-->
+		<link href="{% static 'css/styles.css' %}" rel="stylesheet">
+	</head>
+	<body>
+		<header role="banner">	
+			<img class="logo" src="{% static 'images/Pega-logo.jpg' %}"/>	
+			<h1 style="    display: inline;   font-size: 55px;    margin-left: 50px;">Microservices</h1>
+			<nav role="navigation">
+				<ul>
+					<li><a href="" title="Home" class="current">Home</a></li>
+					<li><a href="" title="About">About</a></li>
+				</ul>
+			</nav>
 
-{% endblock content%}
-</body>
+		</header>
+		<main role="main">			
+			<article class="Services">
+				{% block content %}
+				{%endblock %}
+			</article>
+		</main>
+		<footer id="colophon">
+		</footer>
+		<script src="{% static 'scripts/main.js' %}></script>
+	</body>
 </html>
