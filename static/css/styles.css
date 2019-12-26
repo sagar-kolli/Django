@@ -5,7 +5,7 @@ html {
 body {
 	font: 100% Georgia, "Times New Roman", Times, serif;
 	line-height: 1.4;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	color: #2B3A42;
 }
@@ -71,7 +71,7 @@ nav ul {
 }
 nav li {
 	display: inline-block;
-	font-size: 1.6em;
+	font-size: 1.0em;
 	margin-right: 1.6em;
 }
 nav a:link, nav a:visited {
@@ -131,7 +131,14 @@ section p {
 }
 
 .logo{
-	width:250px
+	width:80px
+}
+.center{
+	text-align:center;
+}
+.header{
+	background-color: darkblue;
+	    color: white;
 }
 
 .footer-widgets-wrapper {
