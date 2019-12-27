@@ -19,5 +19,11 @@ from . import views
 
 urlpatterns = [
     path('',views.home,name="home"),
+	path('Home/',views.home,name="home"),
+	path('Services/',views.services,name="services"),
+	path('Services/Pega-Instance/',views.pegaInstance,name="pegaInstance"),
+	path('Services/Pega-Instance-With-Kubernetes/',views.kubernetes,name="kubernetes"),
+	path('Services/Pega-Platform-Upgrade/',views.upgrade,name="upgrade"),
+	path('About/',views.about,name="about"),
     path('admin/', admin.site.urls),
 ]

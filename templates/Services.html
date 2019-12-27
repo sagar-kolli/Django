@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}
+	<Title> IaaS | Services</Title>
+{% endblock title%}
+
+
+{% block content%}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="/Services/Pega-Instance/"><h3>Pega Instance<img class="Suffixicon"src="{% static 'images/OpenLink.jpg' %}"></img></h3></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="/Services/Pega-Instance-With-Kubernetes/"><h3>Pega Instance With Kubernetes<img class="Suffixicon"src="{% static 'images/OpenLink.jpg' %}"></img></h3></a>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <a href="/Services/Pega-Platform-Upgrade/"><h3>Pega Platform Upgrade<img class="Suffixicon"src="{% static 'images/OpenLink.jpg' %}"></img></h3> </a>       
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+{% endblock content%}

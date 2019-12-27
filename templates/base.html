@@ -12,23 +12,36 @@
 		<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
 	</head>
 	<body>
-		<header role="banner" class="center header">	
-			<img class="logo" src="{% static 'images/cloud.png' %}"/>	
-			<h1 style="    display: inline;">Infrastructure as a service</h1>
-			<nav role="navigation">
-				<ul>
-					<li><a href="" title="Home" class="current">Home</a></li>
-					<li><a href="" title="Services">Services</a></li>
-					<li><a href="" title="About">About</a></li>
-				</ul>
-			</nav>
-
+		<header role="banner" class="header">
+				<div class="center">
+					<img class="logo" src="{% static 'images/cloud.png' %}"/>	
+					<h1 style="    display: inline;">Infrastructure as a service</h1>
+				</div>
+				<div class="navigation">				
+					<nav role="navigation" >
+						<ul style="float:left">
+							<li><a href="/Home/" title="Home" class="current">Home</a></li>
+							<li><a href="/Services/" title="Services">Services</a></li>
+							<li><a href="/About/" title="About">About</a></li>
+						</ul>
+						<ul  style="text-align:right">
+							<li class="dropdown">
+								<a href="" title="Resources" class="current">Resources</a>
+								<ul class="dropdown-content">
+									<li><a href="#">Link 1</a></li>
+									<li><a href="#">Link 1</a></li>
+								</ul>
+							</li>
+							<li><a href="" title="Services">Login</a></li>
+						</ul> 						
+					</nav>
+				</div>
 		</header>
-		<main role="main">			
-			<article class="Services">
+		<main role="main" class="main">			
+			<section class="ActionAreaWrapper">
 				{% block content %}
 				{%endblock %}
-			</article>
+			</section>
 		</main>
 		<footer id="colophon">
 		</footer>
