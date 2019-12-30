@@ -26,4 +26,5 @@ urlpatterns = [
 	path('Services/Pega-Platform-Upgrade/',views.upgrade,name="upgrade"),
 	path('About/',views.about,name="about"),
     path('admin/', admin.site.urls),
+	path('Login', views.login,name="login")
 ]

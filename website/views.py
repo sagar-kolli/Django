@@ -14,4 +14,6 @@ def pegaInstance(request):
 def kubernetes(request):
     return render(request, 'kubernetes.html', {})
 def upgrade(request):
-    return render(request, 'upgrade.html', {})	
+    return render(request, 'upgrade.html', {})
+def login(request):
+    return render(request, 'login.html', {})

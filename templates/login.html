@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title%}
+	<Title> IaaS login </Title>
+{% endblock title%}
+
+
+{% block content%}
+	<form method="POST">
+            {% csrf_token %}
+            <dev>
+                 <p><label for="username">Username</label>
+                  <input type="text" name="username" id="username" required></p>
+                 <p><label for="password">Password</label>
+                    <input type="password" name="password" id="password" required></p>
+             <p style="color: red;">{{error}}</p>
+            </dev>
+            <button type="submit">Login</button>
+    </form>
+{% endblock content%}
